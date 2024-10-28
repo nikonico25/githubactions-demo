@@ -1,0 +1,13 @@
+html{
+    padding: 0.5rem;
+    background-color: goldenrod;
+    font-size: 16px;
+}
+li {
+    padding: 0.5rem;
+    color: white;
+}
+code {
+    padding: 0.5rem;
+    background-color: grey;
+}
