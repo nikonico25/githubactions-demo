@@ -6,23 +6,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  # build:
-  #   runs-on: ubuntu-latest
-  #   steps:    
-  #     - run: |
-  #           pwd
-  #           ls -la
-  #     - uses: actions/upload-artifact@v3
-  #       with:
-  #         name: my_demo_site
-  #         path: .
-  #     - uses: actions/upload-pages-artifact@v1
-  #       with:
-  #         name: Upload static files as artifact
-  #         path: .
+  build:
+    runs-on: ubuntu-latest
+    steps:    
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: build
           
   deploy:
-    # needs: build
+    needs: build
     runs-on: ubuntu-latest 
     environment:
       name: github-pages
