@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: build/
+          path: src/
 
   deploy:
     needs: build

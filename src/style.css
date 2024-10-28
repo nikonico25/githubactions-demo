@@ -1,0 +1,16 @@
+html{
+    padding: 0.5rem;
+    background-color: rgba(128, 128, 128, 0.164);
+    font-size: 16px;
+}
+li {
+    padding: 0.5rem;
+    color: black;
+}
+code {
+    padding: 0.5rem;
+    background-color: grey;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 15px;
+}
