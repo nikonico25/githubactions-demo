@@ -7,11 +7,13 @@ on:
 
 jobs:
   build:
+    id: deployment
     runs-on: ubuntu-latest
     steps:    
+      - uses: actions/checkout@v4
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: build
+          path: .
           
   deploy:
     needs: build
