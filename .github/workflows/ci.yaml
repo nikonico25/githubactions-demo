@@ -11,13 +11,14 @@ jobs:
     steps:    
       - run: |
             pwd
+            ls -la
       - uses: actions/upload-artifact@v3
         with:
           name: my_demo_site
-          path: /data
+          path: /data/index.html
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: /data
+          path: /data/index.html
           
   deploy:
     needs: build
