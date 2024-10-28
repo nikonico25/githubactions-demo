@@ -9,13 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:    
+      - run: |
+            pwd
       - uses: actions/upload-artifact@v3
         with:
           name: my_demo_site
-          path: data
+          path: ../data
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: data
+          path: ../data
           
   deploy:
     needs: build
